@@ -1,0 +1,26 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $s-l;
+}
+
+.contactlist {
+  max-width: 37.5rem;
+  flex-direction: column;
+  display: flex;
+}
+
+.contactlist {
+  li {
+    display: inline-block;
+    padding: $s-xs $s-s;
+    border: 1px solid $secondary-lighter;
+  }
+}
+
+@media screen and (min-width: 30rem) {
+  .contactlist {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

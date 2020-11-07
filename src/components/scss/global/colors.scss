@@ -1,0 +1,9 @@
+$main: #BBBBBB;
+$secondary: #333333;
+$tertiary: #717171;
+$accent: #FA6300;
+$white: #FFFFFF;
+
+$main-lighter: lighten($main, 5%);
+
+$secondary-lighter: lighten($secondary, 10%);

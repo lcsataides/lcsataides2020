@@ -1,0 +1,14 @@
+a {
+  text-decoration: none;
+  transition: all .5s;
+  color: $secondary-lighter;
+
+  &:hover {
+    color: $accent;
+    border-bottom-color: $accent;
+  }
+}
+
+.navlink {
+  padding: $s-xs;
+}

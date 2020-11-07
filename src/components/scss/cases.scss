@@ -1,0 +1,96 @@
+.case-inside {
+  margin-top: $s-xl;
+  margin-bottom: $s-m;
+}
+
+.case-list {
+  margin-bottom: $s-xl;
+}
+
+.case-soon {
+  margin-bottom: $s-xl;
+
+  h4 {
+
+    &:hover{
+      color: $accent;
+    }
+  }
+}
+
+.featureImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto $s-m;
+}
+
+.case-hello {
+  width: 40rem;
+  margin: 0 auto $s-m;
+}
+
+.case-list_box {
+  max-width: 40rem;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  margin: $s-m 0;
+}
+
+.case-box {
+  @extend .case-list_box;
+  margin: $s-m auto;
+}
+
+.case-stacks {
+  flex-grow: 1;
+}
+
+.case-goal,
+.case-stacks,
+.case-role {
+  padding: $s-xs;
+  border: 1px solid $secondary-lighter;
+}
+
+@media screen and (min-width: 30rem) {
+  .case-list_box {
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .case-features {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .case-goal {
+    max-width: 100%;
+    flex: 2 0;
+  }
+}
+
+.case-content {
+  margin-bottom: $s-xl;
+
+  .gatsby-resp-image-wrapper {
+    margin: $s-m auto;
+    width: 100%;
+  }
+
+  > img {
+    @extend .gatsby-resp-image-wrapper;
+    position: relative;
+  }
+
+  p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2 {
+    max-width: 40rem;
+    margin: $s-m auto $s-xs;
+  }
+}

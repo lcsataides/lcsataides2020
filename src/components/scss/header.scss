@@ -1,0 +1,34 @@
+.header {
+  width: 100%;
+  position: fixed;
+  display: block;
+  background-color: $secondary;
+  z-index: 99;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: $s-xs $s-s;
+  margin-bottom: 0;
+}
+
+.site-title {
+  color: $accent;
+
+  &:hover {
+    border-bottom-color: transparent;
+  }
+}
+
+.navsecondary {
+  display: flex;
+  justify-content: space-between;
+
+  .navlink {
+    border: 1px solid $secondary-lighter;
+    padding: $s-xs $s-s;
+  }
+}

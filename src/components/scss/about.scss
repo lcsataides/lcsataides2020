@@ -1,0 +1,22 @@
+.about-content {
+  margin-bottom: $s-l;
+}
+
+.about-cv {
+  margin-bottom: $s-xl;
+
+  svg {
+    margin-left: $s-s;
+  }
+}
+
+.experience-title {
+  display: inline-flex;
+}
+
+@media screen and (min-width: 30rem) {
+  .about-cv {
+    flex-direction: row;
+    align-items: center;
+  }
+}

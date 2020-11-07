@@ -1,0 +1,57 @@
+// Reset
+@import './scss/reset';
+
+// Variables
+@import './scss/global/colors';
+@import './scss/global/variables';
+@import './scss/global/spacing';
+
+// Global
+@import './scss/global/links';
+@import './scss/global/typography';
+
+// Components
+@import './scss/header';
+@import './scss/contact';
+@import './scss/continue';
+@import './scss/cases';
+@import './scss/footernav';
+@import './scss/footer';
+@import './scss/about';
+@import './scss/experience';
+
+// Animations
+@import './scss/animations';
+
+
+
+body {
+  background-color: $secondary;
+}
+
+.container {
+  flex-grow: 1;
+  padding: $s-xs $s-s;
+}
+
+.portfolioContent {
+  margin: 0 auto;
+  position: relative;
+  max-width: 100%;
+  padding: $s-xl $s-xs;
+}
+
+.hello {
+  padding: $s-xl 0;
+}
+
+@media screen and (min-width: 30rem) {
+  .wrapper,
+  .case-wrapper,
+  .about-wrapper {
+    margin: 0 auto;
+    position: relative;
+    max-width: 56.25rem;
+  }
+
+}

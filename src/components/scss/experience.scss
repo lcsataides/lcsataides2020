@@ -1,0 +1,68 @@
+.experience-content, .studies-content, .stacks-content {
+  margin-bottom: $s-l;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  &:before {
+    content: " ";
+    border-top: 2px solid $secondary;
+    position: relative;
+    margin-bottom: $s-xs;
+    display: block;
+    width: 100%;
+    height: 2px;
+  }
+}
+
+.title-column {
+  padding: $s-xs 0;
+}
+
+.work-block, .study-block {
+  margin-bottom: $s-m;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.stacks-list {
+  display: flex;
+  flex-direction: column;
+
+  li {
+    padding: $s-xs 0;
+  }
+}
+
+.stacks-block {
+  margin-bottom: $s-s;
+}
+
+@media screen and (min-width: 40rem) {
+  .experience-content, .studies-content, .stacks-content {
+    position: relative;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .title-column {
+    height:100%;
+    top: 0px;
+    position: sticky;
+    max-width: 50%;
+  }
+
+  .experience-list, .study-list, .stacks-list {
+    width: 70%;
+    padding: $s-xs 0;
+    align-self: flex-start;
+  }
+
+  .stacks-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
